@@ -16,14 +16,15 @@ export default function Users() {
 
   let baseURL = "https://api.github.com/users";
   
-  async function AllUsers(){
+  
+  useEffect(()=>{
+    async function AllUsers(){
     const res = await fetch(baseURL);
     const data = await res.json();
     setUsers(data);
     
   } //listing all the user at the time of opening
 
-  useEffect(()=>{
     AllUsers();
   }, [setUsers]);
 
