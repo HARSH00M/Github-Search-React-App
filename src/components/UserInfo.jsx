@@ -12,6 +12,7 @@ const UserInfo = ()=> {
 
   const [user, setUser] = useState([]);
   const [type, setType] = useState();
+  const [info, setInfo] = useState([]);
   
   
   const navigate = useNavigate();
