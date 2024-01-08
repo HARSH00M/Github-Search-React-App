@@ -16,7 +16,12 @@ export default function Users() {
 
   let baseURL = "https://api.github.com/users";
   
-  
+  async function AlUsers(){
+    const res = await fetch(baseURL);
+    const data = await res.json();
+    setUsers(data);
+    
+  }
   useEffect(()=>{
     async function AllUsers(){
     const res = await fetch(baseURL);
@@ -54,7 +59,7 @@ export default function Users() {
           
 
         }else{
-          AllUsers(); 
+          AlUsers(); 
         }
     }
 
