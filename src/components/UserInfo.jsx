@@ -59,7 +59,7 @@ const UserInfo = ()=> {
              md:px-0 px-4 flex-col gap-10 text-white font-serif font-bold my-10"
           >
             <img
-              src={uinfo.avatar_url}
+            alt="user profile"   src={uinfo.avatar_url}
               className="lg:w-[350px] border-4 border-cbg rounded-lg md:mx-0 mx-auto w-2/3"
             />
             <div className="text-lg leading-10 px-3 flex flex-col self-center justify-center">
