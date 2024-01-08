@@ -20,7 +20,9 @@ const UserInfo = ()=> {
 
     let Endpoint = "https://api.github.com/users";
 
-    async function GetUserInfo(){
+    
+    useEffect(()=>{
+      async function GetUserInfo(){
 
         const res = await fetch(Endpoint + pathname)
         const data = await res.json()
@@ -36,7 +38,6 @@ const UserInfo = ()=> {
       console.log(data);
       setInfo(data);
     }
-    useEffect(()=>{
         GetUserInfo();
         GetUrls();        
     }, [pathname, type])
