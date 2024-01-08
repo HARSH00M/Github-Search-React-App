@@ -26,8 +26,9 @@ const UserInfo = ()=> {
         const data = await res.json()
 
         setUser(()=>[data]);
-        console.log("UserData");
-        console.log(data);
+      
+
+    
     }
     async function GetUrls(){
       const res = await fetch(Endpoint + pathname + `/${type}`);
