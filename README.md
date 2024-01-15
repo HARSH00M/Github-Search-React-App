@@ -1,6 +1,9 @@
 
 # GitHub User Search with React
 This project is a user-friendly web application built using React that leverages the GitHub API to search for users on GitHub. It offers a simple interface to discover and browse GitHub user's Followers, Repositories and Contributions based on their usernames.
+### Website link 
+[![Click me](https://img.shields.io/badge/Click%20me-%E2%9C%93-blue)](https://659ce0586d472072214a9e79--storied-longma-49f689.netlify.app/)
+
 
 ## Features
 User Search: Enter a username and retrieve detailed information about GitHub users.
